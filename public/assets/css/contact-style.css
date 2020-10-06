@@ -1,0 +1,93 @@
+body {
+    background-color: #191a1d;
+    font-family: "Space Mono", "sans serif";
+    color: #f4f4f4;
+  }
+  
+  #nav-bar {
+    border-bottom: 1px solid #f4f4f4;
+    background-color: #191a1d;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  a:link {
+    text-decoration: none;
+    color: #f4f4f4;
+  }
+  
+  a:visited {
+    color: #f4f4f4;
+  }
+  
+  a:hover {
+    background-color: #2a2a2a;
+  }
+  
+  a:active {
+    color: #e7ff00;
+  }
+  
+  #home-link {
+    width: 25%;
+  }
+  
+  #nav-links {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #logo {
+    margin-left: 100px;
+    color: #3bbecd;
+  }
+  
+  #contact-link {
+    margin-right: 100px;
+  }
+  
+  #projects-link {
+    margin-right: 100px;
+  }
+
+  form {
+    width: 50%;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  label, input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #name {
+    width: 100%;
+  }
+
+  #email {
+    width: 100%;
+  }
+
+  #message {
+    width: 100%;
+    height: 150px;
+  }
+
+  #contact {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  input {
+    background-color: rgb(60,190,204,.7);
+    color: #191a1d;
+  }

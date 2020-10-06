@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/skeleton.css"> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Space Mono"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="./assets/css/contact-style.css" />
+    <title>Contact Page</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div id="nav-bar">
+      <div id="home-link">
+        <a href="/"><h2 id="logo">A.D.W.</h2></a>
+      </div>
+      <div id="nav-links">
+        <a href="/projects" id="projects-link">Projects</a>
+        <a href="/contact" id="contact-link">Contact</a>
+      </div>
+    </div>
+    <!-- Body -->
+    <form id="form">
+      <label for="name">Name: </label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter Name"
+        required
+      /><br />
+      <label for="email">Email:</label><br />
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="Enter E-mail"
+        required
+      /><br />
+      <label for="name">Message: </label><br />
+      <input
+        type="text"
+        id="message"
+        name="message"
+        placeholder="Message"
+        required
+      /><br />
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+
+    <!-- Contact Row -->
+    <div id="contact">
+      <div id="linkedin-col">
+        <a
+          href="https://www.linkedin.com/in/austin-williams-76b75b142/"
+          target="_blank"
+        >
+          <img src="./assets/images/linkedin.png" />
+
+          <h4>LinkedIn</h4></a
+        >
+      </div>
+      <div id="github-col">
+        <a href="https://github.com/auzzie13" target="_blank">
+          <img src="./assets/images/github.png" />
+          <h4>Github</h4></a
+        >
+      </div>
+
+      <div id="resume-col">
+        <a
+          href="./assets/images/Resume_Updated.pdf"
+          target="_blank"
+          class="contact-links"
+        >
+          <img src="./assets/images/pdf.png" class="contact-imgs" />
+          <h4>Resume</h4></a
+        >
+      </div>
+      <div id="email-col">
+        <a
+          href="mailto:auswil13@gmail.com"
+          target="_blank"
+          class="contact-links"
+        >
+          <img src="./assets/images/email.png" class="contact-imgs" />
+          <h4>Email</h4></a
+        >
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./js/contact.js"></script>
+  </body>
+</html>

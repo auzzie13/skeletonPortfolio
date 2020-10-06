@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Space Mono"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./assets/css/normalize.css" /> -->
+    <!-- <link rel="stylesheet" href="./assets/css/skeleton.css" /> -->
+    <link rel="stylesheet" href="./assets/css/index-style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- <script type="text/javascript" src="./assets/js/index.js"></script> -->
+    <title>Home Page</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div id="nav-bar">
+      <div id="home-link">
+        <a href="/" id="logo-link"><h2 id="logo">A.D.W.</h2></a>
+      </div>
+      <div id="nav-links">
+        <a href="/projects" id="projects-link">Projects</a>
+        <a href="/contact" id="contact-link">Contact</a>
+      </div>
+    </div>
+    <!-- Body -->
+    <!-- Row 1 -->
+    <div id="row-1">
+      <!-- Contact Column-->
+      <div id="contact-col">
+        <div id="contact-row-1">
+          <!-- <div > -->
+            <a
+              href="https://www.linkedin.com/in/austin-williams-76b75b142/"
+              target="_blank"
+              id="linkedin-col"
+            >
+              <img src="./assets/images/linkedin.png" />
+
+              <h4>LinkedIn</h4></a
+            >
+          <!-- </div> -->
+          <!-- <div > -->
+            <a href="https://github.com/auzzie13" target="_blank" id="github-col"
+              >
+            <img src="./assets/images/github.png" />
+            <h4>Github</h4></a
+            >
+          <!-- </div> -->
+        </div>
+        <div id="contact-row-2">
+          <!-- <div > -->
+            <a
+              href="./assets/images/Resume_Updated.pdf"
+              target="_blank"
+              id="resume-col"
+              >
+            <img src="./assets/images/pdf.png" class="contact-imgs" />
+            <h4>Resume</h4></a
+            >
+          <!-- </div> -->
+          <!-- <div > -->
+            <a
+              href="mailto:auswil13@gmail.com"
+              target="_blank"
+              id="email-col"
+              >
+            <img src="./assets/images/email.png" class="contact-imgs" />
+            <h4>Email</h4></a
+            >
+          <!-- </div> -->
+        </div>
+      </div>
+      <!-- About Me Column -->
+      <div id="about-me-col">
+        <div id="about-me-home" style="display: flex">
+          <h2>
+            Austin Williams
+            <br />
+            Full Stack Developer
+          </h2>
+          <button id="about-me-btn">About Me</button>
+        </div>
+        <div id="about-me-expanded" style="display: none">
+          <p>
+            Graduate of Vanderbilt University's Computer Coding Bootcamp, a
+            <strong>Full Stack Web Developer</strong> with both a front and back
+            end knowledge base, including HTML, CSS, JavaScript, Node.js, mySQL,
+            MongoDB, and others. Transitioning from a background in healthcare
+            and sports medicine, able to leverage
+            <strong>strong problem-solving skills</strong> and a desire for
+            continual learning. A track record of diligence and hardwork,
+            <strong>eager</strong> and able to
+            <strong>quickly learn and progress</strong> into a world of software
+            development.
+          </p>
+          <button id="home-btn">Home</button>
+        </div>
+      </div>
+    </div>
+    <!-- Row 2 -->
+    <!-- Featured Projects -->
+    <div id="row-2">
+      <div id="featured-projects">Featured Projects</div>
+      <div class="project-square">
+        <a href="https://nameless-journey-28810.herokuapp.com/" target="_blank">
+          <div id="node-master-div"></div>
+          <h4 class="project-title">Node Master</h4>
+          <h4 class="project-description">Front End Development</h4>
+        </a>
+      </div>
+      <div class="project-square">
+        <a
+          href="https://fitnesstracker-austinw.herokuapp.com/?id=5e3da32a71af1b0208c8d869"
+          target="_blank"
+        >
+          <div id="fitness-tracker-div"></div>
+          <h4>Fitness Tracker</h4>
+          <h4>Back End Development</h4>
+        </a>
+      </div>
+      <div class="project-square">
+        <a href="http://thawing-bayou-33619.herokuapp.com/" target="_blank">
+          <div id="employee-list-div"></div>
+          <h4>Employee List</h4>
+          <h4>Front End + Back End</h4>
+        </a>
+      </div>
+      <div class="project-square">
+        <a href="https://burger-austinw.herokuapp.com/" target="_blank">
+          <div id="burger-div"></div>
+          <h4>Eat-Da-Burger</h4>
+          <h4>Front End + Back End</h4>
+        </a>
+      </div>
+    </div>
+    <!-- Row 3 -->
+    <!-- Familiar Languages -->
+    <div id="row-3">
+      <div id="familiar-languages">Familiar Languages</div>
+      <div class="language-image" id="html"></div>
+      <div class="language-image" id="css"></div>
+      <div class="language-image" id="js"></div>
+      <div class="language-image" id="node"></div>
+      <div class="language-image" id="express"></div>
+      <div class="language-image" id="jquery"></div>
+      <div class="language-image" id="mysql"></div>
+      <div class="language-image" id="mongo"></div>
+      <div class="language-image" id="jest"></div>
+      <div class="language-image" id="bootstrap"></div>
+      <div class="language-image" id="react"></div>
+      <div class="language-image" id="python"></div>
+      <div class="language-image" id="postgresql"></div>
+    </div>
+
+    <!-- Weather Forecast -->
+    <!-- <div id="weather-row">
+      <h2>Your Local Forecast:</h2>
+      <div class="row">
+        <div class="four columns">
+          <h2>Nashville</h2>
+          <h2>Day 1</h2>
+          <h4>Current Temp:</h4>
+          <h4>Feels Like:</h4>
+          <h4>Humidity:</h4>
+          <h6>D</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="two columns">
+          <h2>Day 2</h2>
+          <h4>High:</h4>
+          <h4>Low:</h4>
+          <h4>Humidity:</h4>
+          <h6>D</h6>
+        </div>
+        <div class="two columns">
+          <h2>Day 3</h2>
+          <h4>High:</h4>
+          <h4>Low:</h4>
+          <h4>Humidity:</h4>
+          <h6>D</h6>
+        </div>
+        <div class="two columns">
+          <h2>Day 4</h2>
+          <h4>High:</h4>
+          <h4>Low:</h4>
+          <h4>Humidity:</h4>
+          <h6>D</h6>
+        </div>
+        <div class="two columns">
+          <h2>Day 5</h2>
+          <h4>High:</h4>
+          <h4>Low:</h4>
+          <h4>Humidity:</h4>
+          <h6>D</h6>
+        </div>
+        <div class="two columns">
+          <h2>Day 6</h2>
+          <h4>High:</h4>
+          <h4>Low:</h4>
+          <h4>Humidity:</h4>
+          <h6>D</h6>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Javascript -->
+    <script>
+      //Variables
+      var aboutMeHomeEl = document.getElementById("about-me-home");
+      var aboutMeExpandedEl = document.getElementById("about-me-expanded");
+      var aboutMeBtn = document.getElementById("about-me-btn");
+      var homeBtn = document.getElementById("home-btn");
+
+      aboutMeBtn.addEventListener("click", hideColumn);
+      homeBtn.addEventListener("click", hideColumn);
+
+      function hideColumn() {
+        if (aboutMeHomeEl.style["display"] == "flex") {
+          aboutMeHomeEl.style["display"] = "none";
+          aboutMeExpandedEl.style["display"] = "flex";
+        } else {
+          aboutMeHomeEl.style["display"] = "flex";
+          aboutMeExpandedEl.style["display"] = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
