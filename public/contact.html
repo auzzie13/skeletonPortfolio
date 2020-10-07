@@ -21,7 +21,7 @@
     <!-- Nav Bar -->
     <div id="nav-bar">
       <div id="home-link">
-        <a href="/"><h2 id="logo">A.D.W.</h2></a>
+        <a href="/" id="logo-link"><h2 id="logo">A.D.W.</h2></a>
       </div>
       <div id="nav-links">
         <a href="/projects" id="projects-link">Projects</a>
@@ -36,7 +36,6 @@
         id="name"
         name="name"
         placeholder="Enter Name"
-        required
       /><br />
       <label for="email">Email:</label><br />
       <input
@@ -44,58 +43,61 @@
         id="email"
         name="email"
         placeholder="Enter E-mail"
-        required
       /><br />
       <label for="name">Message: </label><br />
-      <input
+      <textarea
         type="text"
         id="message"
         name="message"
         placeholder="Message"
-        required
-      /><br />
+      ></textarea><br />
       <input type="submit" id="submit" value="Submit" />
     </form>
+    <div id="alert-container">
+      <div id="alert-message">Please fill out entire form.</div>
+      <button id="alert-button">OK</button>
+    </div>
 
     <!-- Contact Row -->
     <div id="contact">
-      <div id="linkedin-col">
+      <!-- <div id="linkedin-col"> -->
         <a
           href="https://www.linkedin.com/in/austin-williams-76b75b142/"
           target="_blank"
+          id="linkedin-col"
         >
           <img src="./assets/images/linkedin.png" />
 
           <h4>LinkedIn</h4></a
         >
-      </div>
-      <div id="github-col">
-        <a href="https://github.com/auzzie13" target="_blank">
+      <!-- </div> -->
+      <!-- <div > -->
+        <a href="https://github.com/auzzie13" target="_blank" id="github-col">
           <img src="./assets/images/github.png" />
           <h4>Github</h4></a
         >
-      </div>
+      <!-- </div> -->
 
-      <div id="resume-col">
+      <!-- <div id="resume-col"> -->
         <a
           href="./assets/images/Resume_Updated.pdf"
           target="_blank"
-          class="contact-links"
+          id="resume-col"
         >
           <img src="./assets/images/pdf.png" class="contact-imgs" />
           <h4>Resume</h4></a
         >
-      </div>
-      <div id="email-col">
+      <!-- </div> -->
+      <!-- <div id="email-col"> -->
         <a
           href="mailto:auswil13@gmail.com"
           target="_blank"
-          class="contact-links"
+          id="email-col"
         >
           <img src="./assets/images/email.png" class="contact-imgs" />
           <h4>Email</h4></a
         >
-      </div>
+      <!-- </div> -->
     </div>
 
     <script type="text/javascript" src="./js/contact.js"></script>
