@@ -56,8 +56,8 @@ $(document).ready(function () {
       projectTitle.text(data[i].project_name);
       gitLink.text("Github Link");
       deployLink.text("Deployment Link");
-      description.text(data[i].description);
-      languages.text(data[i].languages);
+      description.text("Description: " + data[i].description);
+      languages.text("Languages: " + data[i].languages);
 
       $(".projects-container").append(card);
     }
