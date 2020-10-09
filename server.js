@@ -1,6 +1,6 @@
 //Dependencies
 var express = require("express");
-var mysql = require("mysql");
+var connection = require("./config");
 
 // Create instance of express app
 var app = express();
@@ -8,14 +8,6 @@ var app = express();
 // Set the port for application
 var PORT = process.env.PORT || 8080;
 
-// MySQL DB Connection Information (remember to change this with our specific credentials)
-var connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
-  user: "root",
-  password: "",
-  database: "",
-});
 
 // Initiate MySQL Connection.
 connection.connect(function (err) {
