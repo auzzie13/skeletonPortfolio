@@ -68,7 +68,7 @@ a:active {
 }
 
 #logo-link:hover {
-  background-color: #818391;
+  background-color: #191a1d;
 }
 
 #contact-link,
@@ -85,6 +85,7 @@ form {
   display: flex;
   flex-direction: column;
 }
+
 
 #name {
   width: 100%;
@@ -111,6 +112,24 @@ form {
   color: #191a1d;
   font-size: inherit;
   font-family: inherit;
+}
+
+#name:focus, #email:focus, #message:focus {
+  background-color: #3bbecd;
+  box-shadow: 5px 10px 18px #f4f4f4;
+  outline: none;
+  ;
+}
+
+#name:active, #email:active, #message:active {
+  background-color: rgb(60, 190, 204, 0.7);
+
+
+}
+
+#name.visted {
+  background-color: rgb(60, 190, 204, 0.7);
+
 }
 
 ::placeholder {
@@ -182,4 +201,15 @@ form {
   text-align: center;
   margin: 2em;
   padding: 20px 35px 15px 35px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover, 
+textarea:-webkit-autofill:focus, 
+textarea:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #3bbecd inset !important;
 }
