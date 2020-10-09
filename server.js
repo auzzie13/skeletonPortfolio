@@ -1,6 +1,5 @@
 //Dependencies
 var express = require("express");
-var connection = require("./config");
 
 // Create instance of express app
 var app = express();
@@ -9,14 +8,14 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 
-// Initiate MySQL Connection.
-connection.connect(function (err) {
-  if (err) {
-    console.error("error connecting: " + err.stack);
-    return;
-  }
-  console.log("connected as id " + connection.threadId);
-});
+// // Initiate MySQL Connection.
+// connection.connect(function (err) {
+//   if (err) {
+//     console.error("error connecting: " + err.stack);
+//     return;
+//   }
+//   console.log("connected as id " + connection.threadId);
+// });
 
 //Parse request body as JSON
 app.use(express.static("public"));
