@@ -96,7 +96,11 @@ a:active {
     justify-self: center;
 }
 
-.btns-row button {
+.dropdown {
+  display: none;
+}
+
+.btns-row button, .dropdown button {
   background-color: transparent;
   border: 3px solid #3bbecd;
   border-radius: 20px;
@@ -107,11 +111,11 @@ a:active {
   margin-bottom: 15px;
 }
 
-.btns-row button:hover {
+.btns-row button:hover, .dropdown button:hover {
   background-color: #3bbecd;
 }
 
-.btns-row button:active {
+.btns-row button:active, .dropdown button:active {
   background-color: #818391;
   border: 3px solid #3bbecd;
   border-radius: 20px;
@@ -119,7 +123,7 @@ a:active {
   box-shadow: none;
 }
 
-.btns-row button:focus {
+.btns-row button:focus, .dropdown button:focus {
   outline: none;
   background-color: #818391;
   color: #f4f4f4;
@@ -145,5 +149,66 @@ a:active {
 
 .project-card h4 {
   margin-left: 15px;
+
+}
+
+@media (max-width: 768px) {
+  #nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .btns-row {
+    width: unset;
+  }
+
+}
+
+@media (max-width: 576px) {
+  #nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #home-link {
+    display: flex;
+    justify-content: center;
+  }
+
+  #logo-link:link {
+    margin-left: 0px;
+  }
+
+  #nav-links {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #contact-link,
+  #projects-link {
+    margin-right: 0px;
+    padding: 10px;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btns-row {
+    display: none;
+  }
+
+  .dropdown {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .filter {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
 
 }

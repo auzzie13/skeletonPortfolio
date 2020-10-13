@@ -4,6 +4,13 @@ $(document).ready(function () {
   var reactBtn = $("#react");
   var mernBtn = $("#mern");
   var allBtn = $("#all");
+  var dropBtn = $("#dropdown-btn");
+  var filterEl = $(".filter");
+  var frontEndDropBtn = $("#front-end-dd");
+  var backEndDropBtn = $("#back-end-dd");
+  var reactDropBtn = $("#react-dd");
+  var mernDropBtn = $("#mern-dd");
+  var allDropBtn = $("#all-dd");
 
   $.get("/api/projects", function (data) {
     // console.log(data)
@@ -25,6 +32,20 @@ $(document).ready(function () {
       createProjectCards(data);
     });
   });
+
+  dropBtn.click(function() {
+    showDropdown();
+  })
+
+  frontEndDropBtn.click(dropdownFilter);
+
+  backEndDropBtn.click(dropdownFilter);
+
+  reactDropBtn.click(dropdownFilter);
+
+  mernDropBtn.click(dropdownFilter);
+
+  allDropBtn.click(dropdownFilter);
 
   function createProjectCards(data) {
     for (var i = 0; i < data.length; i++) {
@@ -72,5 +93,16 @@ $(document).ready(function () {
       createProjectCards(data);
     });
   }
+
+  function showDropdown() {
+    console.log(filterEl[0].attributes[1])
+    if(filterEl.css("display", "none") ? console.log("true") : console.log("false"));
+  }
+
+  function dropdownFilter(btn) {
+    console.log(btn)
+
+  }
+
   
 });
