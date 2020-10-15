@@ -5,7 +5,7 @@ $(document).ready(function () {
   var mernBtn = $("#mern");
   var allBtn = $("#all");
   var dropBtn = $("#dropdown-btn");
-  var filterEl = $(".filter");
+  var filterEl = $("#filter");
   var frontEndDropBtn = $("#front-end-dd");
   var backEndDropBtn = $("#back-end-dd");
   var reactDropBtn = $("#react-dd");
@@ -45,7 +45,15 @@ $(document).ready(function () {
 
   mernDropBtn.click(dropdownFilter);
 
-  allDropBtn.click(dropdownFilter);
+  allDropBtn.click(function() {
+    $.get("/api/projects", function (data) {
+      // console.log(data);
+      $(".project-card").remove();
+      createProjectCards(data);
+      dropBtn.text("All");
+      showDropdown();
+    });
+  });
 
   function createProjectCards(data) {
     for (var i = 0; i < data.length; i++) {
@@ -95,12 +103,21 @@ $(document).ready(function () {
   }
 
   function showDropdown() {
-    console.log(filterEl[0].attributes[1])
-    if(filterEl.css("display", "none") ? console.log("true") : console.log("false"));
+    if(filterEl[0].attributes[1].nodeValue == "display: none;" ? filterEl.css("display", "grid") : filterEl.css("display", "none"));
   }
 
   function dropdownFilter(btn) {
-    console.log(btn)
+    $(".project-card").remove();
+
+    var name = btn.target.name;
+    var nameSliced = name.slice(0, -3);
+    var html = $(this).text();
+    $.get("/api/projects/" + nameSliced, function(data) {
+      createProjectCards(data);
+    })
+    showDropdown();
+    dropBtn.text(html);
+    console.log($(this).text());
 
   }
 

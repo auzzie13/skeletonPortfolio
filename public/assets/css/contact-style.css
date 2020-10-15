@@ -213,3 +213,53 @@ textarea:-webkit-autofill:focus,
 textarea:-webkit-autofill:active  {
     -webkit-box-shadow: 0 0 0 30px #3bbecd inset !important;
 }
+
+@media (max-width: 768px) {
+  #nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+}
+
+@media (max-width: 576px) {
+  #nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #home-link {
+    display: flex;
+    justify-content: center;
+  }
+
+  #logo-link:link {
+    margin-left: 0px;
+  }
+
+  #nav-links {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #contact-link,
+  #projects-link {
+    margin-right: 0px;
+    padding: 10px;
+  }
+
+  form {
+    width: unset;
+    margin-left: unset;
+    margin-right: unset;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+
+  
+
+
+}
